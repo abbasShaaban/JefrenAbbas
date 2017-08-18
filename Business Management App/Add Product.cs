@@ -36,5 +36,24 @@ namespace Business_Management_App
             this.tableAdapterManager.UpdateAll(this.shopDataBaseDataSet);
 
         }
+
+        private void btn_Add_Product_Click(object sender, EventArgs e)
+        {
+            if (txb_Product_Name.Text == "" || txb_Product_Sell_Price.Text == "")
+            {
+                if (txb_Product_Name.Text == "")
+                {
+                    txb_Product_Name.BackColor = Color.Red;
+                }
+                if (txb_Product_Sell_Price.Text == "")
+                {
+                    txb_Product_Sell_Price.BackColor = Color.Red;
+                }
+                MessageBox.Show("please add the data colored red");
+                return;
+            }
+        }
+
+        
     }
 }

@@ -34,12 +34,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txb_Product_Sell_Price = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.shopDataBaseDataSet = new Business_Management_App.ShopDataBaseDataSet();
             this.categoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.categoryTableAdapter = new Business_Management_App.ShopDataBaseDataSetTableAdapters.CategoryTableAdapter();
             this.tableAdapterManager = new Business_Management_App.ShopDataBaseDataSetTableAdapters.TableAdapterManager();
             this.categoryComboBox = new System.Windows.Forms.ComboBox();
+            this.btn_Add_Product = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.shopDataBaseDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -85,15 +85,6 @@
             this.txb_Product_Sell_Price.Size = new System.Drawing.Size(373, 38);
             this.txb_Product_Sell_Price.TabIndex = 9;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(61, 475);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(648, 100);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Add Product";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // shopDataBaseDataSet
             // 
             this.shopDataBaseDataSet.DataSetName = "ShopDataBaseDataSet";
@@ -135,13 +126,23 @@
             this.categoryComboBox.TabIndex = 11;
             this.categoryComboBox.ValueMember = "Name";
             // 
+            // btn_Add_Product
+            // 
+            this.btn_Add_Product.Location = new System.Drawing.Point(61, 508);
+            this.btn_Add_Product.Name = "btn_Add_Product";
+            this.btn_Add_Product.Size = new System.Drawing.Size(648, 90);
+            this.btn_Add_Product.TabIndex = 12;
+            this.btn_Add_Product.Text = "Add Product";
+            this.btn_Add_Product.UseVisualStyleBackColor = true;
+            this.btn_Add_Product.Click += new System.EventHandler(this.btn_Add_Product_Click);
+            // 
             // Add_Product
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1279, 884);
+            this.Controls.Add(this.btn_Add_Product);
             this.Controls.Add(this.categoryComboBox);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.txb_Product_Sell_Price);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txb_Product_Name);
@@ -164,12 +165,12 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txb_Product_Sell_Price;
-        private System.Windows.Forms.Button button1;
         private ShopDataBaseDataSet shopDataBaseDataSet;
         private System.Windows.Forms.BindingSource categoryBindingSource;
         private ShopDataBaseDataSetTableAdapters.CategoryTableAdapter categoryTableAdapter;
         private ShopDataBaseDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.ComboBox categoryComboBox;
+        private System.Windows.Forms.Button btn_Add_Product;
 
     }
 }

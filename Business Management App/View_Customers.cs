@@ -80,20 +80,20 @@ namespace Business_Management_App
             {
 
                 case "First Name": src.DataSource = from A in database.Customers
-                                                    where A.First_Name == insertedValue
+                                                    where A.First_Name.Contains(insertedValue)
                                                     select A;
                     break;
 
                 case "Last Name": src.DataSource = from A in database.Customers
-                                                   where A.Last_Name == insertedValue
+                                                   where A.Last_Name.Contains(insertedValue)
                                                    select A;
                     break;
                 case "Phone Number": src.DataSource = from A in database.Customers
-                                                      where A.Phone_Number == insertedValue
+                                                      where A.Phone_Number.Contains(insertedValue)
                                                       select A;
                     break;
                 case "Address": src.DataSource = from A in database.Customers
-                                                 where A.Address == insertedValue
+                                                 where A.Address.Contains(insertedValue)
                                                  select A;
                     break;
 

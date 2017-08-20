@@ -62,5 +62,19 @@ namespace Business_Management_App
                 categoryDataGridView.DataSource = src;
             }
         }
+
+        private void txb_Search_Category_TextChanged(object sender, EventArgs e)
+        {
+            string insertedCategoryValue = txb_Search_Category.Text.ToString();
+            src.DataSource = from C in database.Categories
+                             where C.Name.Contains(insertedCategoryValue)
+                             select C;
+            categoryDataGridView.DataSource = src;
+        }
+
+        private void btn_Delete_Category_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

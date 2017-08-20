@@ -49,24 +49,27 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(111, 174);
+            this.label1.Location = new System.Drawing.Point(42, 73);
+            this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(212, 32);
+            this.label1.Size = new System.Drawing.Size(82, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Category Name";
             // 
             // txb_Category_Name
             // 
-            this.txb_Category_Name.Location = new System.Drawing.Point(353, 174);
+            this.txb_Category_Name.Location = new System.Drawing.Point(132, 73);
+            this.txb_Category_Name.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.txb_Category_Name.Name = "txb_Category_Name";
-            this.txb_Category_Name.Size = new System.Drawing.Size(359, 38);
+            this.txb_Category_Name.Size = new System.Drawing.Size(137, 20);
             this.txb_Category_Name.TabIndex = 1;
             // 
             // btn_Add_Category
             // 
-            this.btn_Add_Category.Location = new System.Drawing.Point(176, 565);
+            this.btn_Add_Category.Location = new System.Drawing.Point(66, 237);
+            this.btn_Add_Category.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.btn_Add_Category.Name = "btn_Add_Category";
-            this.btn_Add_Category.Size = new System.Drawing.Size(536, 87);
+            this.btn_Add_Category.Size = new System.Drawing.Size(201, 36);
             this.btn_Add_Category.TabIndex = 2;
             this.btn_Add_Category.Text = "Add Category";
             this.btn_Add_Category.UseVisualStyleBackColor = true;
@@ -104,18 +107,21 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(767, 174);
+            this.label2.Location = new System.Drawing.Point(288, 73);
+            this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(227, 32);
+            this.label2.Size = new System.Drawing.Size(88, 13);
             this.label2.TabIndex = 5;
             this.label2.Text = "Search Category";
             // 
             // txb_Search_Category
             // 
-            this.txb_Search_Category.Location = new System.Drawing.Point(1032, 174);
+            this.txb_Search_Category.Location = new System.Drawing.Point(387, 73);
+            this.txb_Search_Category.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.txb_Search_Category.Name = "txb_Search_Category";
-            this.txb_Search_Category.Size = new System.Drawing.Size(371, 38);
+            this.txb_Search_Category.Size = new System.Drawing.Size(142, 20);
             this.txb_Search_Category.TabIndex = 6;
+            this.txb_Search_Category.TextChanged += new System.EventHandler(this.txb_Search_Category_TextChanged);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -134,27 +140,30 @@
             this.categoryDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1});
             this.categoryDataGridView.DataSource = this.categoryBindingSource;
-            this.categoryDataGridView.Location = new System.Drawing.Point(117, 263);
+            this.categoryDataGridView.Location = new System.Drawing.Point(44, 110);
+            this.categoryDataGridView.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.categoryDataGridView.Name = "categoryDataGridView";
             this.categoryDataGridView.ReadOnly = true;
             this.categoryDataGridView.RowTemplate.Height = 40;
-            this.categoryDataGridView.Size = new System.Drawing.Size(1286, 236);
+            this.categoryDataGridView.Size = new System.Drawing.Size(482, 99);
             this.categoryDataGridView.TabIndex = 4;
             // 
             // btn_Delete_Category
             // 
-            this.btn_Delete_Category.Location = new System.Drawing.Point(773, 565);
+            this.btn_Delete_Category.Location = new System.Drawing.Point(290, 237);
+            this.btn_Delete_Category.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.btn_Delete_Category.Name = "btn_Delete_Category";
-            this.btn_Delete_Category.Size = new System.Drawing.Size(536, 87);
+            this.btn_Delete_Category.Size = new System.Drawing.Size(201, 36);
             this.btn_Delete_Category.TabIndex = 7;
             this.btn_Delete_Category.Text = "Delete Category";
             this.btn_Delete_Category.UseVisualStyleBackColor = true;
+            this.btn_Delete_Category.Click += new System.EventHandler(this.btn_Delete_Category_Click);
             // 
             // Add_Category
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1551, 835);
+            this.ClientSize = new System.Drawing.Size(595, 315);
             this.Controls.Add(this.btn_Delete_Category);
             this.Controls.Add(this.txb_Search_Category);
             this.Controls.Add(this.label2);
@@ -162,6 +171,7 @@
             this.Controls.Add(this.btn_Add_Category);
             this.Controls.Add(this.txb_Category_Name);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.Name = "Add_Category";
             this.Text = "Add Category";
             this.Load += new System.EventHandler(this.Add_Category_Load);

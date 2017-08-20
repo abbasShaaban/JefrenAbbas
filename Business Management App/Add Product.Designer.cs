@@ -47,42 +47,47 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(55, 222);
+            this.label2.Location = new System.Drawing.Point(21, 93);
+            this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(235, 32);
+            this.label2.Size = new System.Drawing.Size(92, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "Product Category";
             // 
             // txb_Product_Name
             // 
-            this.txb_Product_Name.Location = new System.Drawing.Point(336, 307);
+            this.txb_Product_Name.Location = new System.Drawing.Point(126, 129);
+            this.txb_Product_Name.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.txb_Product_Name.Name = "txb_Product_Name";
-            this.txb_Product_Name.Size = new System.Drawing.Size(373, 38);
+            this.txb_Product_Name.Size = new System.Drawing.Size(142, 20);
             this.txb_Product_Name.TabIndex = 5;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(55, 307);
+            this.label1.Location = new System.Drawing.Point(21, 129);
+            this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(195, 32);
+            this.label1.Size = new System.Drawing.Size(74, 13);
             this.label1.TabIndex = 4;
             this.label1.Text = "Product Name";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(55, 389);
+            this.label4.Location = new System.Drawing.Point(21, 163);
+            this.label4.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(241, 32);
+            this.label4.Size = new System.Drawing.Size(89, 13);
             this.label4.TabIndex = 7;
             this.label4.Text = "Product Sell Price";
             // 
             // txb_Product_Sell_Price
             // 
-            this.txb_Product_Sell_Price.Location = new System.Drawing.Point(336, 389);
+            this.txb_Product_Sell_Price.Location = new System.Drawing.Point(126, 163);
+            this.txb_Product_Sell_Price.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.txb_Product_Sell_Price.Name = "txb_Product_Sell_Price";
-            this.txb_Product_Sell_Price.Size = new System.Drawing.Size(373, 38);
+            this.txb_Product_Sell_Price.Size = new System.Drawing.Size(142, 20);
             this.txb_Product_Sell_Price.TabIndex = 9;
             // 
             // shopDataBaseDataSet
@@ -120,17 +125,19 @@
             this.categoryComboBox.DisplayMember = "Name";
             this.categoryComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.categoryComboBox.FormattingEnabled = true;
-            this.categoryComboBox.Location = new System.Drawing.Point(336, 222);
+            this.categoryComboBox.Location = new System.Drawing.Point(126, 93);
+            this.categoryComboBox.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.categoryComboBox.Name = "categoryComboBox";
-            this.categoryComboBox.Size = new System.Drawing.Size(373, 39);
+            this.categoryComboBox.Size = new System.Drawing.Size(142, 21);
             this.categoryComboBox.TabIndex = 11;
             this.categoryComboBox.ValueMember = "Name";
             // 
             // btn_Add_Product
             // 
-            this.btn_Add_Product.Location = new System.Drawing.Point(61, 508);
+            this.btn_Add_Product.Location = new System.Drawing.Point(23, 213);
+            this.btn_Add_Product.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.btn_Add_Product.Name = "btn_Add_Product";
-            this.btn_Add_Product.Size = new System.Drawing.Size(648, 90);
+            this.btn_Add_Product.Size = new System.Drawing.Size(243, 38);
             this.btn_Add_Product.TabIndex = 12;
             this.btn_Add_Product.Text = "Add Product";
             this.btn_Add_Product.UseVisualStyleBackColor = true;
@@ -138,9 +145,9 @@
             // 
             // Add_Product
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1279, 884);
+            this.ClientSize = new System.Drawing.Size(480, 315);
             this.Controls.Add(this.btn_Add_Product);
             this.Controls.Add(this.categoryComboBox);
             this.Controls.Add(this.txb_Product_Sell_Price);
@@ -148,6 +155,7 @@
             this.Controls.Add(this.txb_Product_Name);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
+            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.Name = "Add_Product";
             this.Text = "Add Product";
             this.Load += new System.EventHandler(this.btn_Add_Product_Load);
